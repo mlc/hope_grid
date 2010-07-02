@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+    <title>The Next HOPE</title>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js" type="text/javascript"></script>
+    <script src="grid.js" type="text/javascript"></script>
+    <script type="text/javascript">
+      //<![CDATA[
+      $(function(){$.getJSON('/hope_schedule/json.php', Hope.make_schedule);})
+      //]]>
+    </script>
+    <link rel="stylesheet" type="text/css" href="grid.css" />
+  </head>
+  <body>
+    <h1>The Next HOPE</h1>
+    <p id="controls"></p>
+    <div id="schedule">
+      <p>Loading&hellip;</p>
+    </div>
+    <noscript>
+      <p>Sorry, this page requires JavaScript in order to function properly.</p>
+    </noscript>
+  </body>
+</html>

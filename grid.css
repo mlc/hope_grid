@@ -1,0 +1,53 @@
+html, body {
+    background-color: white;
+    color: black;
+}
+
+html, body, h1, td, th {
+    font-family: sans-serif;
+}
+
+h1 {
+    font-weight: bold;
+    font-size: 36pt;
+    line-height: 101px;
+    padding-left: 110px;
+    background: url(wedge.png) no-repeat;
+    margin: 10px 0px 0px 0px;
+}
+
+th.day_header {
+    background-color: #ccc;
+    font-size: large;
+    font-weight: bold;
+    padding: 6px;
+}
+
+td {
+    background-color: #eee;
+    padding: 2px;
+}
+
+td.talk {
+    width: 33%;
+    vertical-align: top;
+}
+
+a.talktitle {
+    cursor: pointer;
+}
+
+.talkdesc {
+    font-size: smaller;
+}
+
+#controls {
+    padding-left: 110px;
+    margin: -20px 0px 10px 0px;
+    font-size: smaller;
+}
+
+#controls a {
+    color: blue;
+    cursor: pointer;
+}
