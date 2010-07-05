@@ -7,19 +7,28 @@
     <script src="grid.js" type="text/javascript"></script>
     <script type="text/javascript">
       //<![CDATA[
-      $(function(){$.getJSON('/hope_schedule/json.php', Hope.make_schedule);})
+      $(function(){
+        $.getJSON('/hope_schedule/json.php', Hope.make_schedule);
+        Hope.load_analytics();
+      });
       //]]>
     </script>
     <link rel="stylesheet" type="text/css" href="grid.css" />
   </head>
   <body>
-    <h1>The Next HOPE</h1>
-    <p id="controls"></p>
+    <div id="header">
+      <div id="logo"><a href="/"><img src="wedge.png" width="101" height="101" alt="TNH" /></a></div>
+      <h1>The Next HOPE</h1>
+      <form><p id="controls"></p></form>
+    </div>
     <div id="schedule">
       <p>Loading&hellip;</p>
     </div>
     <noscript>
       <p>Sorry, this page requires JavaScript in order to function properly.</p>
     </noscript>
+    <p id="source">
+      <a href="http://github.com/mlc/hope_grid">source code</a>
+    </p>
   </body>
 </html>

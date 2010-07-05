@@ -10,10 +10,8 @@ html, body, h1, td, th {
 h1 {
     font-weight: bold;
     font-size: 36pt;
-    line-height: 101px;
     padding-left: 110px;
-    background: url(wedge.png) no-repeat;
-    margin: 10px 0px 0px 0px;
+    margin: 0px;
 }
 
 th.day_header {
@@ -43,11 +41,33 @@ a.talktitle {
 
 #controls {
     padding-left: 110px;
-    margin: -20px 0px 10px 0px;
+    margin: 15px 0px 10px 0px;
+}
+
+#controls, #source {
     font-size: smaller;
 }
 
 #controls a {
     color: blue;
     cursor: pointer;
+}
+
+#source a {
+    color: blue;
+    text-decoration: underline;
+}
+
+a img {
+    border: 0px;
+}
+
+@media print {
+    #controls, #source {
+        display: none;
+    }
+}
+
+#logo {
+    position: absolute;
 }
